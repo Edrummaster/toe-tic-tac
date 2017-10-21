@@ -9,7 +9,7 @@ using namespace std;
 int main(){
 	string etqs= "abcdefghi";
 	Ficha f('X','D');
-	f.dibujarFicha();
+	//f.dibujarFicha();
 	Jugador j1("plyer",'X');
 	Tablero tb(etqs);
 	tb.dibujarse();

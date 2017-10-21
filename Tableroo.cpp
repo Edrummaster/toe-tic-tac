@@ -4,9 +4,6 @@
 #include <iostream>
 using namespace std;
 
-
-
-
 Tablero::Tablero(string etiquetas){
 	int k=0;
 	for(int i; i<3;i++){
@@ -17,24 +14,15 @@ Tablero::Tablero(string etiquetas){
 	}
 }
 
-
-
-
-
 void Tablero::dibujarse(){
-	for(int i; i<3;i++){
-		for(int j; j<3; j++){
+	for(int i=0; i<3;i++){
+		for(int j=0; j<3; j++){
 			Ficha f = matriz[i][j];
 			f.dibujarFicha();
 		}
 		cout<<endl;
 	}
 }
-
-
-
-
-
 
 Ficha* Tablero::obtenerFicha(char etiqueta){
 	for(int i; i<3;i++){
@@ -47,7 +35,6 @@ Ficha* Tablero::obtenerFicha(char etiqueta){
 	}
 	return NULL;
 }
-
 
 bool Tablero::verificarTickyFilas(int &fila){
 	if(matriz[0][0].getSimbolo() == matriz[0][1].getSimbolo() && matriz[0][0].getSimbolo() ==matriz[0][2].getSimbolo()){
